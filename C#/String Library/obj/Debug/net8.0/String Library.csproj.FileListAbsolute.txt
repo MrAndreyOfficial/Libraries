@@ -1,0 +1,11 @@
+D:\Projects\Libraries\C#\String Library\bin\Debug\net8.0\String Library.deps.json
+D:\Projects\Libraries\C#\String Library\bin\Debug\net8.0\String Library.dll
+D:\Projects\Libraries\C#\String Library\bin\Debug\net8.0\String Library.pdb
+D:\Projects\Libraries\C#\String Library\obj\Debug\net8.0\String Library.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Libraries\C#\String Library\obj\Debug\net8.0\String Library.AssemblyInfoInputs.cache
+D:\Projects\Libraries\C#\String Library\obj\Debug\net8.0\String Library.AssemblyInfo.cs
+D:\Projects\Libraries\C#\String Library\obj\Debug\net8.0\String Library.csproj.CoreCompileInputs.cache
+D:\Projects\Libraries\C#\String Library\obj\Debug\net8.0\String Library.dll
+D:\Projects\Libraries\C#\String Library\obj\Debug\net8.0\refint\String Library.dll
+D:\Projects\Libraries\C#\String Library\obj\Debug\net8.0\String Library.pdb
+D:\Projects\Libraries\C#\String Library\obj\Debug\net8.0\ref\String Library.dll
