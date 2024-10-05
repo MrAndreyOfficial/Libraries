@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #141414;
+    --link: #262626;
+    --white: #FFFFFF;
+    --link-font-size: 18px;
+    --card-bg-color: #E9E9E9;
+}
+
+.header {
+    padding: 30px 140px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--link);
+    font-size: var(--link-font-size);
+}
+
+.outlined {
+    background-color: transparent !important;
+    color: var(--link) !important;
+}
+
+.nav-menu {
+    list-style: none;
+    gap: 60px;
+}
+
+.buttons {
+    gap: 30px;
+
+    flex-direction: row !important;
+    -ms-flex-direction: row !important;
+}
+
+.button {
+    padding: 15px 55px;
+    background-color: var(--black);
+    color: var(--white);
+    border: 3px solid var(--black);
+}
+
+.flex, .cards, .card, .card > .card-body, .nav-menu, .buttons {
+    display: flex;
+}
+
+.align-items-start {
+    align-items: start;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: start;
+}
+
+.justify-content-start {
+    justify-content: start;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.justify-content-space-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.flex-direction-row {
+    flex-direction: row;
+    -ms-flex-direction: row;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.flex-direction-column-reverse {
+    flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+}
+
+.flex-direction-column-row-reverse {
+    flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+}
+
+.cards {
+    justify-content: center;
+    gap: 10px;
+}
+
+.card {
+    max-width: 370px;
+}
+
+.card > .card-body {
+    background-color: var(--card-bg-color);
+    padding: 20px;
+    margin-top: -4px;
+
+    gap: 10px;
+}
