@@ -5,12 +5,16 @@ public static class ListExtensions
     /// <summary>
     /// Remove all duplicate elements
     /// </summary>
-    /// <exception cref="ArgumentOutOfRangeException">Throws if list is empty</exception>
+    /// <exception cref="ArgumentOutOfRangeException">Throws if count is less than 0</exception>
+    /// <exception cref="ArgumentNullException">Throws if list is empty</exception>
     /// <returns>New list with unique elements</returns>
     public static List<T> RemoveDuplicate<T>(this IList<T> elements)
     {
         if (elements.Count < 1 || elements == null)
-            throw new ArgumentOutOfRangeException(nameof(elements), "List is empty");
+            throw new ArgumentOutOfRangeException(nameof(elements.Count), "List is empty");
+
+        if (elements == null)
+            throw new ArgumentNullException(nameof(elements), "List is null");
 
         var list = new List<T>();
 
@@ -26,18 +30,18 @@ public static class ListExtensions
     }
 
     /// <summary>
-    /// Remove all elements until element is found
+    /// Remove all elements until element (exclusive)
+    /// Working with current list
     /// </summary>
     /// <exception cref="ArgumentOutOfRangeException">Throws if list is empty</exception>
     /// <exception cref="ArgumentNullException">Throws if item is null</exception>
-    /// <returns>New list with unique elements</returns>
     public static void RemoveUntil<T>(this IList<T> elements, T item)
     {
         if (elements.Count < 1)
             throw new ArgumentOutOfRangeException(nameof(elements), "List is empty");
 
         if (item == null)
-            throw new ArgumentOutOfRangeException(nameof(item), "Item is null");
+            throw new ArgumentNullException(nameof(item), "Item is null");
 
         var tempList = new List<T>(elements);
 
@@ -52,11 +56,25 @@ public static class ListExtensions
 
     /// <summary>
     /// Adds an element to the end of the list
+    /// <exception cref="ArgumentNullException">Throws if item is null</exception>
     /// </summary>
-    public static void Push<T>(this IList<T> list, T item) => list.Add(item);
+    public static void Push<T>(this IList<T> list, T item)
+    {
+        if (list == null)
+            throw new ArgumentNullException(nameof(item), "Item is null");
+
+        list.Add(item);
+    }
 
     /// <summary>
     /// Removes the last element
+    /// <exception cref="ArgumentNullException">Throws if item is null</exception>
     /// </summary>
-    public static void Pop<T>(this IList<T> list) => list.RemoveAt(list.Count - 1);
+    public static void Pop<T>(this IList<T> list)
+    {
+        if (list == null)
+            throw new ArgumentNullException(nameof(list), "Item is null");
+
+        list.RemoveAt(list.Count - 1);
+    }
 }

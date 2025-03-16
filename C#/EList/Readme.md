@@ -27,7 +27,7 @@ numbers.Push(100);
 numbers.Push(125);
 
 foreach (var element in numbers)
-    Console.Write($"{element}\t"); // 10 20 30 75 85 125
+    Console.Write($"{element}\t"); // 10 20 30 75 85 100 125
 
 numbers.Pop();
 
